@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weathapp!</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- weather icons -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light text-light bg-dark">
+        <a class="navbar-brand">
+            <i class="fa fa-sun-o" aria-hidden="true"></i>
+            <strong>Mari</strong>
+        </a>
+        <form class="form-inline">
+            <input id="searchedlocation" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button id="submitBtn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+
+    <div class="container">
+        <div class="d-flex justify-content-center pt-3">
+            <h6 class="text-white bg-info text-center py-4" style="width: 90px; height: 90px;" id="min-temp"> </h6>
+            <h5 class="text-white bg-danger text-center p-2" style="width: 240px; height: 120px;" id="max-temp"></h5>
+            <h1 class="text-hide" style="background-image: url('https://randomuser.me/api/portraits/women/33.jpg'); width: 120px; height: 90px;">Current</h1>
+        </div>
+        <div class="d-flex justify-content-center pt-0" id="weathers">
+
+        </div>
+        <div class="d-flex justify-content-center row" id="weather">
+            <div class="col-12">
+                <h1 id="weather-header" class="text-info text-center bg-light p-3" style="width: 100%; height: auto;">Brisbane Weather</h1>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center row pt-3" id="users">
+        </div>
+
+        <div class="d-flex justify-content-center row my-3 bg-light">
+            <h1 class="text-info text-center bg-light py-3" style="width: 100%; height: auto;">View Our Gallery</h1>
+        </div>
+        <div class="d-flex justify-content-center row pt-3 pb-2 bg-light" id="gallery">
+        </div>
+    </div>
+
+    <footer class="bg-dark">
+        <div class="container py-5 bg-dark">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
+                    <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
+                    <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
+                    <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
+                    <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
+                    <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+                </svg>
+                    <small class="d-block mb-3 text-muted">© 2017-2018</small>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Features</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Cool stuff</a></li>
+                        <li><a class="text-muted" href="#">Random feature</a></li>
+                        <li><a class="text-muted" href="#">Team feature</a></li>
+                        <li><a class="text-muted" href="#">Stuff for developers</a></li>
+                        <li><a class="text-muted" href="#">Another one</a></li>
+                        <li><a class="text-muted" href="#">Last time</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Resource</a></li>
+                        <li><a class="text-muted" href="#">Resource name</a></li>
+                        <li><a class="text-muted" href="#">Another resource</a></li>
+                        <li><a class="text-muted" href="#">Final resource</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Business</a></li>
+                        <li><a class="text-muted" href="#">Education</a></li>
+                        <li><a class="text-muted" href="#">Government</a></li>
+                        <li><a class="text-muted" href="#">Gaming</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>About</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Team</a></li>
+                        <li><a class="text-muted" href="#">Locations</a></li>
+                        <li><a class="text-muted" href="#">Privacy</a></li>
+                        <li><a class="text-muted" href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="JS/users.js"></script>
+    <script src="JS/weather.js"></script>
+    <script src="JS/ip_lookup.js"></script>
+    <script src="JS/run.js"></script>
+</body>
+
+</html>

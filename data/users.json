@@ -1,0 +1,61 @@
+[{
+        "firstName": "James",
+        "lastName": "Doe",
+        "dob": 1990,
+        "address": "192 example st, Brisbane",
+        "state": "QLD",
+        "country": "Australia",
+        "image": "https://randomuser.me/api/portraits/men/91.jpg",
+        "bio": "We spend a lot of time on social media, and for good reason."
+    },
+    {
+        "firstName": "Mary",
+        "lastName": "Jewells",
+        "dob": 1978,
+        "address": "102 example st, Melbourne",
+        "state": "VIC",
+        "country": "Australia",
+        "image": "https://randomuser.me/api/portraits/women/89.jpg",
+        "bio": "We spend a lot of time on social media, and for good reason."
+    },
+    {
+        "firstName": "Dicks",
+        "lastName": "Jay",
+        "dob": 1989,
+        "address": "21 example st, Brisbane",
+        "state": "QLD",
+        "country": "Australia",
+        "image": "https://randomuser.me/api/portraits/men/54.jpg",
+        "bio": "We spend a lot of time on social media, and for good reason."
+    },
+    {
+        "firstName": "Kamay",
+        "lastName": "Khouzame",
+        "dob": 1992,
+        "address": "192 example st, Sydney",
+        "state": "NSW",
+        "country": "Australia",
+        "image": "https://randomuser.me/api/portraits/women/33.jpg",
+        "bio": "We spend a lot of time on social media, and for good reason."
+    },
+    {
+        "firstName": "Yue",
+        "lastName": "Wang",
+        "dob": 1992,
+        "address": "12 example st, Sydney",
+        "state": "NSW",
+        "country": "Australia",
+        "image": "https://randomuser.me/api/portraits/women/17.jpg",
+        "bio": "We spend a lot of time on social media, and for good reason."
+    },
+    {
+        "firstName": "Xi",
+        "lastName": "Zhou",
+        "dob": 2002,
+        "address": "102 example st, Perth",
+        "state": "WA",
+        "country": "Australia",
+        "image": "https://randomuser.me/api/portraits/women/35.jpg",
+        "bio": "We spend a lot of time on social media, and for good reason."
+    }
+]
