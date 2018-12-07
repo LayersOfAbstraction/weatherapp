@@ -7,7 +7,7 @@ function Weather(address) {
 // Get geolocation
 Weather.prototype.geoCode = async function() {
     const encodedAddress = encodeURIComponent(this.address);
-    const base_uri = 'http://www.mapquestapi.com/geocoding/v1/address?key=ZTpz5E7GnsGuRLXiGXjL3WlBgT8434UJ&location=';
+    const base_uri = 'https://www.mapquestapi.com/geocoding/v1/address?key=ZTpz5E7GnsGuRLXiGXjL3WlBgT8434UJ&location=';
     const geocodeUrl = base_uri + encodedAddress;
     console.log(geocodeUrl);
     try {
