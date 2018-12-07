@@ -4,5 +4,5 @@ const ipLookUp = function(resolve) {
         .then((res) => res.json())
         .catch((error) => undefined)
         .then((data) => resolve(data))
-    }catch(err){return undefine;}
+    }catch(err){return undefined;}
 }
