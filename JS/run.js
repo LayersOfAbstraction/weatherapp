@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             const weather = new Weather(defaultLocation);
             weather.getWeatherData();
         } else
-            defaultLocation = 'Australia';
+            defaultLocation = 'Brisbane Australia';
     });
 
     // CONSTRUCT URLS
