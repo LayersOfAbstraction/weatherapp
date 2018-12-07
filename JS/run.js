@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
 
     // CONSTRUCT URLS
-    const urls = ['https://jsonplaceholder.typicode.com/photos', './data/users.json'];
+    const urls = ['https://jsonplaceholder.typicode.com/photos', './../data/users.json'];
 
     // FETCH AND DISPLAY DATA
     const user = new User();
