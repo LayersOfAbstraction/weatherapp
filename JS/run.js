@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             weather.getWeatherData();
 
     // CONSTRUCT URLS
-    const urls = ['https://jsonplaceholder.typicode.com/photos', './weatherapp/data/users.json'];
+    const urls = ['https://jsonplaceholder.typicode.com/photos', './data/users.json'];
 
     // FETCH AND DISPLAY DATA
     const user = new User();
