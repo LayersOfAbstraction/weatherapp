@@ -8,21 +8,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     let defaultLocation = '';
 
-    // Set default location to user's ip address' location
-    ipLookUp((results) => {
-        if (results !== undefined) {
-            // Get user's current location
-            defaultLocation = `${results.city} ${results.country}`;
+//     // Set default location to user's ip address' location
+//     ipLookUp((results) => {
+//         if (results !== undefined) {
+//             // Get user's current location
+//             defaultLocation = `${results.city} ${results.country}`;
 
-            // Fetch user's weather data
-//             const weather = new Weather(defaultLocation);
-//             weather.getWeatherData();
-        } else
-            defaultLocation = null;
-    });
+//             // Fetch user's weather data
+// //             const weather = new Weather(defaultLocation);
+// //             weather.getWeatherData();
+//         } else
+//             defaultLocation = null;
+//     });
     
      // Fetch user's weather data
-            defaultLocation = 'Brisbane';
+            defaultLocation = 'Brisbane Australia';
             const weather = new Weather(defaultLocation);
             weather.getWeatherData();
 
