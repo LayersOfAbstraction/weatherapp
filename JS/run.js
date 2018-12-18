@@ -15,11 +15,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
             defaultLocation = `${results.city} ${results.country}`;
 
             // Fetch user's weather data
-            const weather = new Weather(defaultLocation);
-            weather.getWeatherData();
+//             const weather = new Weather(defaultLocation);
+//             weather.getWeatherData();
         } else
             defaultLocation = null;
     });
+    
+     // Fetch user's weather data
+            defaultLocation = 'Brisbane';
+            const weather = new Weather(defaultLocation);
+            weather.getWeatherData();
 
     // CONSTRUCT URLS
     const urls = ['https://jsonplaceholder.typicode.com/photos', './../data/users.json'];
